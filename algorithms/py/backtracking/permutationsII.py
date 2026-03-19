@@ -28,3 +28,29 @@ class Solution:
 
         dfs([])
         return result
+
+# Swap check
+class Solution:
+    def permuteUnique(self, nums: list[int]) -> list[list[int]]:
+        result = []
+        nums.sort()
+
+        def dfs(index):
+            if index == len(nums):
+                result.append(nums[:])
+                return
+
+            seen = set()
+
+            for i in range(index, len(nums)):
+                if nums[i] in seen:
+                    continue
+
+                seen.add(nums[i])
+
+                nums[i], nums[index] = nums[index], nums[i]
+                dfs(index + 1)
+                nums[i], nums[index] = nums[index], nums[i]
+
+        dfs(0)
+        return result
