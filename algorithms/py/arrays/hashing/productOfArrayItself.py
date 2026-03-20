@@ -4,17 +4,17 @@
 # You must write an algorithm that runs in O(n) time and without using the division operation.
 
 # Pattern:
-# This is a prefix/suffix product problem
+#   This is a prefix/suffix product problem
 
 # Approach:
-# I use two passes: first to build prefix products, then multiply in suffix products in reverse.
+#   I use two passes: first to build prefix products, then multiply in suffix products in reverse.
 
-# Time/Space complexity:
-# Time complexity of this approach is linear O(n)
-# Space complexity is constant O(1) and the result array isn't counted
+# Time & Space complexity:
+#   Time complexity of this approach is linear O(n)
+#   Space complexity is constant O(1) and the result array isn't counted
 
 # Edge Case(s):
-# Handle zeroes and do not use division
+#   Handle zeroes and do not use division
 
 
 
