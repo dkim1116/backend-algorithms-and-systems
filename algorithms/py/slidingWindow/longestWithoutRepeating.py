@@ -1,4 +1,16 @@
-from typing import List
+# Pattern: 
+#     Sliding window (variable size)
+
+# Approach:
+#     We use a sliding window with a set to track characters in the current window.
+#     As we expand the window, if we see a duplicate character, we shrink the window from the left until the duplicate is removed.
+#     We update the maximum window length at each step.
+
+# Time & Space complexity:
+#     Time complexity is O(n) since each character is added and removed from the set at most once
+#     Space complexity is O(n) as the hashmap can grow to size of n
+
+
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
