@@ -1,0 +1,51 @@
+Python bytecode
+
+pycache/
+*.py[cod]
+*$py.class
+
+Virtual environments
+
+venv/
+env/
+.venv/
+
+macOS
+
+.DS_Store
+
+VS Code
+
+.vscode/
+
+JetBrains (PyCharm, IntelliJ)
+
+.idea/
+
+Logs
+
+*.log
+
+Environment variables
+
+.env
+
+Jupyter Notebook checkpoints (if you ever use notebooks)
+
+.ipynb_checkpoints/
+
+Coverage / testing
+
+.coverage
+htmlcov/
+.pytest_cache/
+
+Build / dist
+
+build/
+dist/
+*.egg-info/
+
+Misc
+
+*.swp
