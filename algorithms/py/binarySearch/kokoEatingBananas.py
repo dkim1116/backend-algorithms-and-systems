@@ -10,8 +10,8 @@
 #     Binary Search on answer
 
 # Approach:
-#     I need to find the minimumSpeed needed for Koko to be able to finish any pile of bananas minSpeed = max(piles)
-#     I need to find the maximumSpeed needed for Koko to be able to finish all piles of bananas maxSpeed = sum(piles)
+#     I need to find the minimumSpeed needed for Koko to be able to finish all piles of bananas with unlimited time minSpeed = 1
+#     I need to find the maximumSpeed needed for Koko to be able to finish any pile of bananas maxSpeed = max(piles)
 #     This will be the range we run binary Search on [minSpeed, maxSpeed]
 #     I find the middle speed between [minSpeed, maxSpeed] and check if Koko can finish all bananas at midSpeed within h hours
 #     If she can finish, then I check if she can still finish within median speed of [minSpeed, midSpeed - 1]
