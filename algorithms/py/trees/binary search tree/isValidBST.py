@@ -4,6 +4,8 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# Range boundary
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
 
@@ -16,3 +18,22 @@ class Solution:
         
         return dfs(root, None, None)
         
+# Inorder traversal
+class Solution:
+    def isValidBSTInorder(self, root: TreeNode) -> bool:
+        stack = []
+        left = root
+        prev = None
+
+        while len(stack) or left:
+            while left:
+                stack.append(left)
+                left = left.left
+
+            node = stack.pop()
+            if prev is not None and prev >= node.val:
+                return False
+            prev = node.val
+            left = left.right
+
+        return True
