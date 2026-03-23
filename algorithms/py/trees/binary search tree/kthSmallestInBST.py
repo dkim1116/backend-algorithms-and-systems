@@ -9,7 +9,7 @@
 
 # Time & Space complexity:
 #     Time complexity is O(n)
-#     Space complexity is O(1)
+#     Space complexity is O(h) where h is the height of the recursive stack
 
 class TreeNode:
     def __init__(self, val, left=None, right=None):
@@ -17,7 +17,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-class Solution:
+# Standard DFS
+class SolutionDFS:
     def kthSmallest(self, root: TreeNode, k: int) -> int:
         count = 0
         result = None
@@ -38,3 +39,23 @@ class Solution:
 
         dfs(root)
         return result
+    
+# Iterative
+class SolutionItr:
+    def kthSmallest(self, root: TreeNode, k: int) -> int:
+        stack = []
+        left = root
+        count = 0
+
+        while stack or left:
+            while left:
+                stack.append(left)
+                left = left.left
+
+            node = stack.pop()
+            count += 1
+
+            if count == k:
+                return node.val
+
+            left = node.right
