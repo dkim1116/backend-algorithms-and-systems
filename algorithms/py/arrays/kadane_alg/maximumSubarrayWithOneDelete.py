@@ -3,7 +3,7 @@
 # Note that the subarray needs to be non-empty after deleting one element.
 
 # Pattern:
-#     Kadane's algorithm
+#     Kadane's algorithm (DP with Greedy)
 
 # Approach:
 #     Standard Kadane tracks the maximum subarray sum ending at the current index.

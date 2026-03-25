@@ -5,7 +5,7 @@
 # Note that the product of an array with a single element is the value of that element.
 
 # Pattern:
-#     Kadane's algorithm
+#     Kadane's algorithm (DP with Greedy)
 
 # Approach:
 #     At each position, track the maximum and minimum product of any subarray ending at that index.

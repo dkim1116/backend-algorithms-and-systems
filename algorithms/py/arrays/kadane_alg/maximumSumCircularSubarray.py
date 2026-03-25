@@ -6,7 +6,7 @@
 
 
 # Pattern:
-#     Kadane's algorithm
+#     Kadane's algorithm (DP with Greedy)
 
 # Approach:
 #     If the best sum doesn't wrap around the array, then standard Kadane's algorith will give us the answer.

@@ -32,7 +32,7 @@ class Solution:
         def dfs(index):
             if index == len(nums):
                 result.append(nums[:])
-                continue
+                return
             
             for i in range(index, len(nums)):
                 nums[i], nums[index] = nums[index], nums[i]

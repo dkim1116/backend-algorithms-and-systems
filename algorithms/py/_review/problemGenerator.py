@@ -57,6 +57,10 @@ problems = [
     "removeDuplicates.py",
     "removeElement.py",
     "threeSumsRe.py",
+    "maximumProductSubarray.py",
+    "maximumSubarrayWithOneDelete.py",
+    "maximumSumCircularSubarray.py",
+    "maximumSumSubarray.py"
 ]
 
 # Shuffle once
