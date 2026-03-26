@@ -32,6 +32,9 @@
 
 #     To make sure we can correctly find the minimum across all coin combinations at every amount, we initialize dp with infinity
 
+
+
+
 class Solution:
     def coinChange(self, coins: list[int], amount: int) -> int:
         dp = [float('inf') for _ in range(amount + 1)]

@@ -22,6 +22,23 @@
 #
 #     The answer is the best value seen among noDel and oneDel across the array.
 
+# Pattern:
+#     Dynamic Programming as we compute the max sum at any given index with previous answers ending at given index
+
+# State:
+#     I need to keep track of two states. noDeleteBest and oneDeleteBest
+#     noDeleteBest will check if previous answer + current num is best or just starting from current number
+#     oneDeleteBest will check if previous answer is best or previous answer with one deletion + current number
+
+# Initialization:
+#     I start with the first item in array as thats the best one we've seen so far
+
+# Transition:
+#     Iterate through the array:
+#         noDelBest = max(noDelBest + num, num)
+#         oneDelBest = max(noDelBest, oneDelBest + num)
+
+# Result:
 
 class Solution:
     def maxSubarrayWithDeletion(self, nums: list[int]) -> int:
