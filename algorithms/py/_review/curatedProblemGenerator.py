@@ -19,7 +19,7 @@ problems = [
     # {"name": "Product of Array Except Self", "link": "https://leetcode.com/problems/product-of-array-except-self/"},
     # Backtracking
     {"name": "Subsets", "link": "https://leetcode.com/problems/subsets/"},
-    {"name": "Combination Sum", "link": "https://leetcode.com/problems/combination-sum/"},
+    # {"name": "Combination Sum", "link": "https://leetcode.com/problems/combination-sum/"},
     {"name": "Combination Sum II", "link": "https://leetcode.com/problems/combination-sum-ii/"},
     {"name": "Permutations", "link": "https://leetcode.com/problems/permutations/"},
     # Trees
@@ -50,7 +50,7 @@ problems = [
     {"name": "3Sum", "link": "https://leetcode.com/problems/3sum/"},
     {"name": "Trapping Rain Water", "link": "https://leetcode.com/problems/trapping-rain-water/"},
     {"name": "Move Zeroes", "link": "https://leetcode.com/problems/move-zeroes/"},
-    #DP
+    # DP
     {"name": "House Robber", "link": "https://leetcode.com/problems/house-robber/"},
     {"name": "Minimum Path Sum", "link": "https://leetcode.com/problems/minimum-path-sum/"},
     {"name": "Maximum Product Subarray", "link": "https://leetcode.com/problems/maximum-product-subarray/"},
@@ -61,6 +61,8 @@ problems = [
     {"name": "Coin Change", "link": "https://leetcode.com/problems/coin-change/"},
     
     # Not yet {"name": "Single Number", "link": "https://leetcode.com/problems/single-number/"},
+    # Trie
+    {"name": "Word Search II", "link": "https://leetcode.com/problems/word-search-ii"},
 ]
 
 # Shuffle once
