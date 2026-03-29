@@ -12,4 +12,16 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, nums: list[int], k: int) -> int:
-        pass
+        sumMap = {0 : 1}
+        runningSum = 0
+        count = 0
+
+        for num in nums:
+            runningSum += num
+
+            if runningSum - k in sumMap:
+                count += sumMap[runningSum - k]
+
+            sumMap[runningSum] = sumMap.get(runningSum, 0) + 1
+
+        return count
