@@ -12,4 +12,24 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, s: str, k: int) -> int:
-        pass
+        freqMap = {}
+
+        maxLength = 0
+        mostFreq = 0
+
+        left = 0
+
+        for right in range(len(s)):
+            char = s[right]
+
+            freqMap[char] = freqMap.get(char, 0) + 1
+            mostFreq = max(mostFreq, freqMap[char])
+
+            while (right - left + 1) - mostFreq > k:
+                leftChar = s[left]
+                freqMap[leftChar] -= 1
+                left += 1
+
+            maxLength = max(maxLength, right - left + 1)
+        return maxLength
+
