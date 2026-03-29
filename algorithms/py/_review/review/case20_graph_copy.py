@@ -18,4 +18,20 @@ class Node:
 
 class Solution:
     def solve(self, node: Node | None) -> Node | None:
-        pass
+        if not node:
+            return None
+        cloneMap = {}
+
+        def dfs(currNode):
+            if currNode in cloneMap:
+                return cloneMap[currNode]
+            
+            clone = Node(currNode.val)
+            cloneMap[currNode] = clone
+
+            for neighbor in currNode.neighbors:
+                clone.neighbors.append(dfs(neighbor))
+
+            return clone
+        
+        return dfs(node)

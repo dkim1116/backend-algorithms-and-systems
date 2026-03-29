@@ -24,4 +24,17 @@ class TreeNode:
 
 class Solution:
     def solve(self, root: TreeNode | None) -> int:
-        pass
+        maxSum = float('-inf')
+
+        def dfs(node):
+            nonlocal maxSum
+            if not node:
+                return 0
+            
+            leftPathSum = max(0, dfs(node.left))
+            rightPathSum = max(0, dfs(node.right))
+
+            maxSum = max(maxSum, node.val + leftPathSum + rightPathSum)
+            return node.val + max(leftPathSum, rightPathSum)
+        dfs(root)
+        return maxSum
