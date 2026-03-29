@@ -12,4 +12,17 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, nums: list[int]) -> int:
-        pass
+        numSet = set(nums)
+        maxLength = 0
+
+        for num in numSet:
+            if num - 1 not in numSet:
+                count = 1
+                currNum = num
+
+                while currNum + 1 in numSet:
+                    count += 1
+                    currNum = currNum + 1
+                
+                maxLength = max(count, maxLength)
+        return maxLength
