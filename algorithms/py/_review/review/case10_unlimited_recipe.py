@@ -13,4 +13,20 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, values: list[int], target: int) -> list[list[int]]:
-        pass
+        result = []
+
+        def dfs(index, path, total):
+            if total == target:
+                result.append(path[:])
+                return
+
+            if total > target:
+                return
+            
+            for i in range(index, len(values)):
+                path.append(values[i])
+                dfs(i, path, total + values[i])
+                path.pop()
+
+        dfs(0,[],0)
+        return result
