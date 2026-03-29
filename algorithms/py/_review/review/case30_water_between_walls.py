@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 9
 
 class Solution:
-    def trap(self, height: list[int]) -> int:
+    def solve(self, height: list[int]) -> int:
         pass

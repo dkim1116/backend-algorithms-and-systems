@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: False
 
 class Solution:
-    def checkInclusion(self, s1: str, s2: str) -> bool:
+    def solve(self, s1: str, s2: str) -> bool:
         pass

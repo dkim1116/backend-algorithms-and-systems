@@ -12,5 +12,29 @@ from __future__ import annotations
 # Output: 999999999
 
 class Solution:
-    def maxDistance(self, positions: list[int], m: int) -> int:
-        pass
+    def solve(self, positions: list[int], m: int) -> int:
+        positions.sort()
+        minDist = positions[1] - positions[0]
+        maxDist = positions[-1] - positions[0]
+
+        def works(dist):
+            balls = 1
+            prevDist = positions[0]
+
+            for i in range(1, len(positions)):
+                if positions[i] - prevDist >= dist:
+                    balls += 1
+                    prevDist = positions[i]
+            return balls >= m
+        
+        left = minDist
+        right = maxDist
+
+        while left <= right:
+            mid = (left + right) // 2
+
+            if works(mid):
+                left = mid + 1
+            else:
+                right = mid - 1
+        return right

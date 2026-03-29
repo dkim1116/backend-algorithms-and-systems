@@ -10,5 +10,5 @@ from __future__ import annotations
 # Output: 0
 
 class Solution:
-    def maxProduct(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass

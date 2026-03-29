@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: []
 
 class Solution:
-    def threeSum(self, nums: list[int]) -> list[list[int]]:
+    def solve(self, nums: list[int]) -> list[list[int]]:
         pass

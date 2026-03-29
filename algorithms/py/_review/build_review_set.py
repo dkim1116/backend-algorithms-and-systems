@@ -50,7 +50,7 @@ SPECS = [
         ],
         "starter": """
 class Solution:
-    def search(self, nums: list[int], target: int) -> int:
+    def solve(self, nums: list[int], target: int) -> int:
         pass
 """,
     },
@@ -70,7 +70,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def splitArray(self, nums: list[int], k: int) -> int:
+    def solve(self, nums: list[int], k: int) -> int:
         pass
 """,
     },
@@ -90,7 +90,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def minDays(self, flowers: list[int], m: int, k: int) -> int:
+    def solve(self, flowers: list[int], m: int, k: int) -> int:
         pass
 """,
     },
@@ -110,7 +110,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def maxDistance(self, positions: list[int], m: int) -> int:
+    def solve(self, positions: list[int], m: int) -> int:
         pass
 """,
     },
@@ -129,7 +129,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def minWindow(self, source: str, need: str) -> str:
+    def solve(self, source: str, need: str) -> str:
         pass
 """,
     },
@@ -148,7 +148,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def characterReplacement(self, s: str, k: int) -> int:
+    def solve(self, s: str, k: int) -> int:
         pass
 """,
     },
@@ -167,7 +167,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def checkInclusion(self, s1: str, s2: str) -> bool:
+    def solve(self, s1: str, s2: str) -> bool:
         pass
 """,
     },
@@ -186,7 +186,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def subarraySum(self, nums: list[int], k: int) -> int:
+    def solve(self, nums: list[int], k: int) -> int:
         pass
 """,
     },
@@ -205,7 +205,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def longestConsecutive(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass
 """,
     },
@@ -225,7 +225,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def combinationSum(self, values: list[int], target: int) -> list[list[int]]:
+    def solve(self, values: list[int], target: int) -> list[list[int]]:
         pass
 """,
     },
@@ -245,7 +245,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def combinationSum2(self, values: list[int], target: int) -> list[list[int]]:
+    def solve(self, values: list[int], target: int) -> list[list[int]]:
         pass
 """,
     },
@@ -263,7 +263,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def permute(self, nums: list[int]) -> list[list[int]]:
+    def solve(self, nums: list[int]) -> list[list[int]]:
         pass
 """,
     },
@@ -283,7 +283,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def maxPathSum(self, root: TreeNode | None) -> int:
+    def solve(self, root: TreeNode | None) -> int:
         pass
 """,
     },
@@ -303,7 +303,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def diameterOfBinaryTree(self, root: TreeNode | None) -> int:
+    def solve(self, root: TreeNode | None) -> int:
         pass
 """,
     },
@@ -322,7 +322,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def lowestCommonAncestor(
+    def solve(
         self,
         root: TreeNode | None,
         p: TreeNode,
@@ -347,7 +347,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def isValidBST(self, root: TreeNode | None) -> bool:
+    def solve(self, root: TreeNode | None) -> bool:
         pass
 """,
     },
@@ -366,7 +366,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def kthSmallest(self, root: TreeNode | None, k: int) -> int:
+    def solve(self, root: TreeNode | None, k: int) -> int:
         pass
 """,
     },
@@ -386,7 +386,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
+    def solve(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
         pass
 """,
     },
@@ -405,7 +405,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def numIslands(self, grid: list[list[str]]) -> int:
+    def solve(self, grid: list[list[str]]) -> int:
         pass
 """,
     },
@@ -425,7 +425,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def cloneGraph(self, node: Node | None) -> Node | None:
+    def solve(self, node: Node | None) -> Node | None:
         pass
 """,
     },
@@ -444,7 +444,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
+    def solve(self, points: list[list[int]], k: int) -> list[list[int]]:
         pass
 """,
     },
@@ -463,7 +463,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
+    def solve(self, nums: list[int], k: int) -> list[int]:
         pass
 """,
     },
@@ -483,7 +483,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def mergeKLists(self, lists: list[ListNode | None]) -> ListNode | None:
+    def solve(self, lists: list[ListNode | None]) -> ListNode | None:
         pass
 """,
     },
@@ -502,7 +502,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def insert(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
+    def solve(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
         pass
 """,
     },
@@ -520,7 +520,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def merge(self, intervals: list[list[int]]) -> list[list[int]]:
+    def solve(self, intervals: list[list[int]]) -> list[list[int]]:
         pass
 """,
     },
@@ -539,7 +539,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def eraseOverlapIntervals(self, intervals: list[list[int]]) -> int:
+    def solve(self, intervals: list[list[int]]) -> int:
         pass
 """,
     },
@@ -558,7 +558,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def dailyTemperatures(self, temperatures: list[int]) -> list[int]:
+    def solve(self, temperatures: list[int]) -> list[int]:
         pass
 """,
     },
@@ -577,7 +577,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def largestRectangleArea(self, heights: list[int]) -> int:
+    def solve(self, heights: list[int]) -> int:
         pass
 """,
     },
@@ -596,7 +596,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def threeSum(self, nums: list[int]) -> list[list[int]]:
+    def solve(self, nums: list[int]) -> list[list[int]]:
         pass
 """,
     },
@@ -615,7 +615,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def trap(self, height: list[int]) -> int:
+    def solve(self, height: list[int]) -> int:
         pass
 """,
     },
@@ -634,7 +634,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def moveZeroes(self, nums: list[int]) -> None:
+    def solve(self, nums: list[int]) -> None:
         pass
 """,
     },
@@ -654,7 +654,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def rob(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass
 """,
     },
@@ -673,7 +673,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def minPathSum(self, grid: list[list[int]]) -> int:
+    def solve(self, grid: list[list[int]]) -> int:
         pass
 """,
     },
@@ -691,7 +691,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def maxProduct(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass
 """,
     },
@@ -709,7 +709,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def maxSubArray(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass
 """,
     },
@@ -728,7 +728,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def maxSubarraySumCircular(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass
 """,
     },
@@ -746,7 +746,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def maximumSum(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass
 """,
     },
@@ -765,7 +765,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def lengthOfLIS(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass
 """,
     },
@@ -784,7 +784,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def coinChange(self, coins: list[int], amount: int) -> int:
+    def solve(self, coins: list[int], amount: int) -> int:
         pass
 """,
     },
@@ -803,7 +803,7 @@ class Solution:
         ],
         "starter": """
 class Solution:
-    def findWords(self, board: list[list[str]], words: list[str]) -> list[str]:
+    def solve(self, board: list[list[str]], words: list[str]) -> list[str]:
         pass
 """,
     },

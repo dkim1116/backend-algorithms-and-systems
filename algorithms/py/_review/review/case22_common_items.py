@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: [1]
 
 class Solution:
-    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
+    def solve(self, nums: list[int], k: int) -> list[int]:
         pass

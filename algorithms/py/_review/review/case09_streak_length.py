@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 9
 
 class Solution:
-    def longestConsecutive(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass

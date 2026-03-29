@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 3
 
 class Solution:
-    def numIslands(self, grid: list[list[str]]) -> int:
+    def solve(self, grid: list[list[str]]) -> int:
         pass

@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 4
 
 class Solution:
-    def characterReplacement(self, s: str, k: int) -> int:
+    def solve(self, s: str, k: int) -> int:
         pass

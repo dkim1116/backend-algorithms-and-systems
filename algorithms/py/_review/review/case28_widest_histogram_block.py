@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 4
 
 class Solution:
-    def largestRectangleArea(self, heights: list[int]) -> int:
+    def solve(self, heights: list[int]) -> int:
         pass

@@ -10,5 +10,5 @@ from __future__ import annotations
 # Output: 1
 
 class Solution:
-    def maxSubArray(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass

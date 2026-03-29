@@ -10,5 +10,5 @@ from __future__ import annotations
 # Output: [[0, 1], [1, 0]]
 
 class Solution:
-    def permute(self, nums: list[int]) -> list[list[int]]:
+    def solve(self, nums: list[int]) -> list[list[int]]:
         pass

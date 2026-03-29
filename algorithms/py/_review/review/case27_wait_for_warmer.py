@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: [1, 1, 1, 0]
 
 class Solution:
-    def dailyTemperatures(self, temperatures: list[int]) -> list[int]:
+    def solve(self, temperatures: list[int]) -> list[int]:
         pass

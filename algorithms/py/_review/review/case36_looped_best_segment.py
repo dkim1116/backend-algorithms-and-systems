@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 10
 
 class Solution:
-    def maxSubarraySumCircular(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass

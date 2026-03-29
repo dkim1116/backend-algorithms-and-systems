@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 1
 
 class Solution:
-    def lengthOfLIS(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass

@@ -12,5 +12,5 @@ from __future__ import annotations
 # Output: 12
 
 class Solution:
-    def rob(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass

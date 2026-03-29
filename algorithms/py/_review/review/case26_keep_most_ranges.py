@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 2
 
 class Solution:
-    def eraseOverlapIntervals(self, intervals: list[list[int]]) -> int:
+    def solve(self, intervals: list[list[int]]) -> int:
         pass

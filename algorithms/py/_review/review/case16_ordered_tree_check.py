@@ -23,5 +23,5 @@ class TreeNode:
 
 
 class Solution:
-    def isValidBST(self, root: TreeNode | None) -> bool:
+    def solve(self, root: TreeNode | None) -> bool:
         pass

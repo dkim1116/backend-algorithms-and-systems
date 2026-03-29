@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: [0]
 
 class Solution:
-    def moveZeroes(self, nums: list[int]) -> None:
+    def solve(self, nums: list[int]) -> None:
         pass

@@ -10,5 +10,5 @@ from __future__ import annotations
 # Output: 3
 
 class Solution:
-    def maximumSum(self, nums: list[int]) -> int:
+    def solve(self, nums: list[int]) -> int:
         pass

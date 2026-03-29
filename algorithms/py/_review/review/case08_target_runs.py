@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 2
 
 class Solution:
-    def subarraySum(self, nums: list[int], k: int) -> int:
+    def solve(self, nums: list[int], k: int) -> int:
         pass

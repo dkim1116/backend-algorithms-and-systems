@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: -1
 
 class Solution:
-    def coinChange(self, coins: list[int], amount: int) -> int:
+    def solve(self, coins: list[int], amount: int) -> int:
         pass

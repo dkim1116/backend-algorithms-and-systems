@@ -12,11 +12,11 @@ from __future__ import annotations
 # Output: 9
 
 class Solution:
-    def splitArray(self, nums: list[int], k: int) -> int:
+    def solve(self, nums: list[int], k: int) -> int:
         minSum = max(nums)
         maxSum = sum(nums)
 
-        def canSplit(newSum):
+        def works(newSum):
             arr = 1
             currSum = 0
 
@@ -35,7 +35,7 @@ class Solution:
         while left <= right:
             mid = (left + right) // 2
 
-            if canSplit(mid):
+            if works(mid):
                 right = mid - 1
             else:
                 left = mid + 1

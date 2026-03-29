@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: any two closest points
 
 class Solution:
-    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
+    def solve(self, points: list[list[int]], k: int) -> list[list[int]]:
         pass

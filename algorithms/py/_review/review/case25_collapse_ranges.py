@@ -10,5 +10,5 @@ from __future__ import annotations
 # Output: [[1, 5]]
 
 class Solution:
-    def merge(self, intervals: list[list[int]]) -> list[list[int]]:
+    def solve(self, intervals: list[list[int]]) -> list[list[int]]:
         pass

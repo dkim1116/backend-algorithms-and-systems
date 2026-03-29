@@ -12,5 +12,5 @@ from __future__ import annotations
 # Output: [[2, 2, 2, 2], [2, 3, 3], [3, 5]]
 
 class Solution:
-    def combinationSum(self, values: list[int], target: int) -> list[list[int]]:
+    def solve(self, values: list[int], target: int) -> list[list[int]]:
         pass

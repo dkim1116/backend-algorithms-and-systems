@@ -22,7 +22,7 @@ class TreeNode:
 
 
 class Solution:
-    def lowestCommonAncestor(
+    def solve(
         self,
         root: TreeNode | None,
         p: TreeNode,

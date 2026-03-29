@@ -22,5 +22,5 @@ class TreeNode:
 
 
 class Solution:
-    def kthSmallest(self, root: TreeNode | None, k: int) -> int:
+    def solve(self, root: TreeNode | None, k: int) -> int:
         pass

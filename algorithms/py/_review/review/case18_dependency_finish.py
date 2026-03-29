@@ -12,5 +12,5 @@ from __future__ import annotations
 # Output: False
 
 class Solution:
-    def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
+    def solve(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
         pass

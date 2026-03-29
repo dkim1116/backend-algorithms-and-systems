@@ -12,7 +12,7 @@ from __future__ import annotations
 # Output: -1
 
 class Solution:
-    def minDays(self, flowers: list[int], m: int, k: int) -> int:
+    def solve(self, flowers: list[int], m: int, k: int) -> int:
         if m * k > len(flowers):
             return -1
 
@@ -20,7 +20,7 @@ class Solution:
         maxDays = max(flowers)
 
 
-        def canBloom(days):
+        def works(days):
             bouquet = 0
             currFlower = 0
 
@@ -41,7 +41,7 @@ class Solution:
         while left <= right:
             mid = (left + right) // 2
 
-            if canBloom(mid):
+            if works(mid):
                 right = mid - 1
             else:
                 left = mid + 1

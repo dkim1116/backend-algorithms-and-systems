@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: []
 
 class Solution:
-    def findWords(self, board: list[list[str]], words: list[str]) -> list[str]:
+    def solve(self, board: list[list[str]], words: list[str]) -> list[str]:
         pass

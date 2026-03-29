@@ -17,5 +17,5 @@ class ListNode:
 
 
 class Solution:
-    def mergeKLists(self, lists: list[ListNode | None]) -> ListNode | None:
+    def solve(self, lists: list[ListNode | None]) -> ListNode | None:
         pass

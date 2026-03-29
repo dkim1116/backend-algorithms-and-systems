@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: 12
 
 class Solution:
-    def minPathSum(self, grid: list[list[int]]) -> int:
+    def solve(self, grid: list[list[int]]) -> int:
         pass

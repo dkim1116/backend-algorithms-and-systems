@@ -17,5 +17,5 @@ class Node:
 
 
 class Solution:
-    def cloneGraph(self, node: Node | None) -> Node | None:
+    def solve(self, node: Node | None) -> Node | None:
         pass

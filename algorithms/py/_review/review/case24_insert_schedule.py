@@ -11,5 +11,5 @@ from __future__ import annotations
 # Output: [[1, 2], [3, 10], [12, 16]]
 
 class Solution:
-    def insert(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
+    def solve(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
         pass
