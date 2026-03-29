@@ -13,4 +13,37 @@ from __future__ import annotations
 
 class Solution:
     def minDays(self, flowers: list[int], m: int, k: int) -> int:
-        pass
+        if m * k > len(flowers):
+            return -1
+
+        minDays = min(flowers)
+        maxDays = max(flowers)
+
+
+        def canBloom(days):
+            bouquet = 0
+            currFlower = 0
+
+            for flower in flowers:
+                if flower <= days:
+                    currFlower += 1
+
+                    if currFlower == k:
+                        bouquet += 1
+                        currFlower = 0
+                else:
+                    currFlower = 0
+            return bouquet >= m
+
+        left = minDays
+        right = maxDays
+
+        while left <= right:
+            mid = (left + right) // 2
+
+            if canBloom(mid):
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return left
