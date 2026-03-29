@@ -31,16 +31,16 @@ class Solution:
             if node:
                 heapq.heappush(minHeap, (node.val, i, node))
 
-        dummyNode = ListNode(0)
-        tail = dummyNode
+        dummyhead = ListNode(0)
+        tail = dummyhead
 
-        while minHeap:
+        while len(minHeap):
             val, i, node = heapq.heappop(minHeap)
 
             tail.next = node
-            tail = tail.next
+            tail = node
 
             if node.next:
                 heapq.heappush(minHeap, (node.next.val, i, node.next))
 
-        return dummyNode.next
+        return dummyhead.next
