@@ -10,6 +10,18 @@ from __future__ import annotations
 # Input: points = [[3, 3], [5, -1], [-2, 4]], k = 2
 # Output: any two closest points
 
+import heapq
+
 class Solution:
     def solve(self, points: list[list[int]], k: int) -> list[list[int]]:
-        pass
+        maxHeap = []
+
+        for x, y in points:
+            dist = (x * x) + (y * y)
+
+            heapq.heappush(maxHeap, (-dist, [x, y]))
+
+            if len(maxHeap) > k:
+                heapq.heappop(maxHeap)
+
+        return [point for dist, point in maxHeap]
