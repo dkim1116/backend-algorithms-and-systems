@@ -24,4 +24,18 @@ class TreeNode:
 
 class Solution:
     def solve(self, root: TreeNode | None) -> int:
-# DIAMETER
+        maxDiameter = 0
+
+        def dfs(node):
+            nonlocal maxDiameter
+            if not node:
+                return 0
+            
+            leftPath = dfs(node.left)
+            rightPath = dfs(node.right)
+
+            maxDiameter = max(maxDiameter, leftPath + rightPath)
+
+            return 1 + max(leftPath, rightPath)
+        dfs(root)
+        return maxDiameter

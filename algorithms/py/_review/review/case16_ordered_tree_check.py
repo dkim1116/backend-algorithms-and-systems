@@ -24,4 +24,16 @@ class TreeNode:
 
 class Solution:
     def solve(self, root: TreeNode | None) -> bool:
-        pass
+        
+        def rangeCheck(node, min, max):
+            if not node:
+                return True
+            
+            if min is not None and node.val <= min:
+                return False
+            if max is not None and node.val >= max:
+                return False
+            
+            return rangeCheck(node.left, min, node.val) and rangeCheck(node.right, node.val, max)
+        
+        return rangeCheck(root, None, None)
