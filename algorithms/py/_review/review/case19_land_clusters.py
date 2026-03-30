@@ -12,4 +12,25 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, grid: list[list[str]]) -> int:
-        pass
+        dirs = [[1,0],[-1,0],[0,1],[0,-1]]
+        land = 0
+        rows = len(grid)
+        cols = len(grid[0])
+
+        def dfs(row, col):
+            grid[row][col] = '0'
+
+            for dirX, dirY in dirs:
+                newX = row + dirX
+                newY = col + dirY
+
+                if 0 <= newX < rows and 0 <= newY < cols and grid[newX][newY] == "1":
+                    dfs(newX, newY)
+
+        for row in range(rows):
+            for col in range(cols):
+                if grid[row][col] == "1":
+                    land += 1
+                    dfs(row, col)
+
+        return land
