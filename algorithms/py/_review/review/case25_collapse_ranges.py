@@ -11,4 +11,21 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, intervals: list[list[int]]) -> list[list[int]]:
-        pass
+        result = []
+
+        intervals.sort()
+
+        for currStart, currEnd in intervals:
+            if not result:
+                result.append([currStart, currEnd])
+            else:
+                prevStart, prevEnd = result[-1]
+
+                maxStart = max(prevStart, currStart)
+                minEnd = min(prevEnd, currEnd)
+
+                if maxStart <= minEnd:
+                    result[-1] = [prevStart, max(prevEnd, currEnd)]
+                else:
+                    result.append([currStart, currEnd])
+        return result

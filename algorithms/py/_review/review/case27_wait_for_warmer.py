@@ -12,4 +12,19 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, temperatures: list[int]) -> list[int]:
-        pass
+        res = [0] * len(temperatures)
+        stack = []
+
+
+        for i in range(len(temperatures)):
+            temp = temperatures[i]
+
+            while stack and temp > temperatures[stack[-1]]:
+                day = stack.pop()
+                res[day] = i - day
+
+            stack.append(i)
+
+        return res
+
+

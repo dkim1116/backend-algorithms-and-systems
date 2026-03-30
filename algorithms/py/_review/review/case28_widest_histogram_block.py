@@ -12,4 +12,4 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, heights: list[int]) -> int:
-        pass
+        

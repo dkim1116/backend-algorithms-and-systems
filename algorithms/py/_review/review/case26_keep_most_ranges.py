@@ -12,4 +12,20 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, intervals: list[list[int]]) -> int:
-        pass
+        removed = 0
+        prevEnd = None
+
+        intervals.sort()
+
+        for start, end in intervals:
+            if prevEnd is None:
+                prevEnd = end
+                continue
+
+            if start < prevEnd:
+                removed += 1
+                prevEnd = min(end, prevEnd)
+            else:
+                prevEnd = end
+
+        return removed

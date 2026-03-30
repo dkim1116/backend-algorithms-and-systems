@@ -12,4 +12,22 @@ from __future__ import annotations
 
 class Solution:
     def solve(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
-        pass
+        result = []
+        newStart, newEnd = newInterval
+        inserted = False
+
+        for currStart, currEnd in intervals:
+            if currEnd < newStart:
+                result.append([currStart, currEnd])
+            elif currStart > newEnd:
+                if not inserted:
+                    result.append([newStart, newEnd])
+                    inserted = True
+                result.append([currStart, currEnd])
+            else:
+                newStart = min(currStart, newStart)
+                newEnd = max(currEnd, newEnd)
+
+        if not inserted:
+            result.append([newStart, newEnd])
+        return result
