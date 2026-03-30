@@ -23,4 +23,22 @@ class TreeNode:
 
 class Solution:
     def solve(self, root: TreeNode | None, k: int) -> int:
-        pass
+        count = 0
+        res = None
+
+        def dfs(node):
+            nonlocal count, res
+
+            if not node or res is not None:
+                return None
+            
+            dfs(node.left)
+            count += 1
+
+            if count == k:
+                res = node.val
+            
+            dfs(node.right)
+
+        dfs(root)
+        return res
