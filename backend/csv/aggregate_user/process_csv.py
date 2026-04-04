@@ -31,4 +31,8 @@ def process_csv(file_path):
                     "salary": int(salary)
                 })
     result.sort(key=lambda x: x["salary"], reverse=True)
+    print(result)
     return result
+
+if __name__ == '__main__':
+    process_csv("./data.csv")

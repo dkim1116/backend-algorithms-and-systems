@@ -2,11 +2,11 @@ import random
 
 problems = [
     # Binary Search
-    # {"name": "Binary Search", "link": "https://leetcode.com/problems/binary-search/"},
+    {"name": "Binary Search", "link": "https://leetcode.com/problems/binary-search/"},
     {"name": "Search in Rotated Sorted Array", "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/"},
-    # {"name": "Find First and Last Position of Element in Sorted Array", "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"},
+    {"name": "Find First and Last Position of Element in Sorted Array", "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"},
     {"name": "Split Array Largest Sum", "link": "https://leetcode.com/problems/split-array-largest-sum/"},
-    # {"name": "Capacity To Ship Packages Within D Days", "link": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"},
+    {"name": "Capacity To Ship Packages Within D Days", "link": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"},
     {"name": "Minimum Number of Days to Make m Bouquets", "link": "https://leetcode.com/problems/minimum-number-of-days-to-make-bouquets/"},
     {"name": "Magnetic Force Between Two Balls", "link": "https://leetcode.com/problems/magnetic-force-between-two-balls/"},
     # Sliding Window
@@ -18,7 +18,7 @@ problems = [
     {"name": "Longest Consecutive Sequence", "link": "https://leetcode.com/problems/longest-consecutive-sequence/"},
     # {"name": "Product of Array Except Self", "link": "https://leetcode.com/problems/product-of-array-except-self/"},
     # Backtracking
-    # {"name": "Subsets", "link": "https://leetcode.com/problems/subsets/"},
+    {"name": "Subsets", "link": "https://leetcode.com/problems/subsets/"},
     {"name": "Combination Sum", "link": "https://leetcode.com/problems/combination-sum/"},
     {"name": "Combination Sum II", "link": "https://leetcode.com/problems/combination-sum-ii/"},
     {"name": "Permutations", "link": "https://leetcode.com/problems/permutations/"},
@@ -28,7 +28,7 @@ problems = [
     {"name": "Lowest Common Ancestor of a Binary Tree", "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"},
     {"name": "Validate Binary Search Tree", "link": "https://leetcode.com/problems/validate-binary-search-tree/"},
     {"name": "Kth Smallest Element in a BST", "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"},
-    # {"name": "Binary Tree Level Order Traversal", "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/"},
+    {"name": "Binary Tree Level Order Traversal", "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/"},
     # Graphs
     {"name": "Course Schedule", "link": "https://leetcode.com/problems/course-schedule/"},
     {"name": "Number of Islands", "link": "https://leetcode.com/problems/number-of-islands/"},
@@ -41,8 +41,8 @@ problems = [
     {"name": "Insert Interval", "link": "https://leetcode.com/problems/insert-interval/"},
     {"name": "Merge Intervals", "link": "https://leetcode.com/problems/merge-intervals/"},
     {"name": "Non-overlapping Intervals", "link": "https://leetcode.com/problems/non-overlapping-intervals/"},
-    # {"name": "Meeting Rooms II", "link": "https://leetcode.com/problems/meeting-rooms-ii/"},
-    # {"name": "My Calendar II", "link": "https://leetcode.com/problems/my-calendar-ii/"},
+    {"name": "Meeting Rooms II", "link": "https://leetcode.com/problems/meeting-rooms-ii/"},
+    {"name": "My Calendar II", "link": "https://leetcode.com/problems/my-calendar-ii/"},
     # Monotonic Stack
     {"name": "Daily Temperatures", "link": "https://leetcode.com/problems/daily-temperatures/"},
     {"name": "Largest Rectangle in Histogram", "link": "https://leetcode.com/problems/largest-rectangle-in-histogram/"},
