@@ -17,3 +17,40 @@
 # In special offer 1, you can pay $5 for 3A and 0B
 # In special offer 2, you can pay $10 for 1A and 2B. 
 # You need to buy 3A and 2B, so you may pay $10 for 1A and 2B (special offer #2), and $4 for 2A.
+
+class Solution:
+    def shoppingOffers(self, price: List[int], special: List[List[int]], needs: List[int]) -> int:
+        # price = [2,5]
+        # needs = [3,2]
+        # special = [
+                # [3,0,5],
+                # [1,2,10]]
+        memo = {}
+        def dfs(currNeeds, memo):
+            # Keep track of already computed needs to optimize for computing different branches of needed options
+            if tuple(currNeeds) in memo:
+                return memo[tuple(currNeeds)]
+            minCost = 0
+
+            # Try paying for each item individually without offer
+            for i in range(len(currNeeds)):
+                minCost += price[i] * currNeeds[i]
+
+            # Try using specials
+            for offer in special:
+                newNeeds = []
+                valid = True
+
+                # When current offer usage exceeds the count of any menu items, skip
+                for i in range(len(currNeeds)):
+                    if offer[i] > currNeeds[i]:
+                        valid = False
+                        break
+                    newNeeds.append(currNeeds[i] - offer[i])
+                
+                # If its valid, then with remaining needed items, recurse
+                if valid:
+                    minCost = min(minCost, offer[-1] + dfs(newNeeds, memo))
+            memo[tuple(currNeeds)] = minCost
+            return minCost
+        return dfs(needs, memo)
